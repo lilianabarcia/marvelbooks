@@ -11,23 +11,3 @@ body {
   align-items: center;
   
 }
-
-#main-container {
-  height: 700px;
-  width: 60%;
-  border:2px;
-  margin-left:5rem;
-  margin-right:10rem;
-  text-align: center;
-  font-size: 14px;
-}
-
-#MyLib {
-  text-align: left;
-  font-size: 14px;
-}
-
-#ThanosLib {
-  text-align: right;
-  font-size: 14px;
-}
