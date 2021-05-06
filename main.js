@@ -12,12 +12,15 @@ class Book {
 let books = [];
 let startIndex = 40;
 let maxResults = 40;
+let allBooks = [];
+//element.volumeInfo.imageLinks.thumbnail,
 
 function getDataFromGoogleBookApi() {
     $.get(`https://www.googleapis.com/books/v1/volumes?q='Marvel'&maxResults=${maxResults}&startIndex=${startIndex}`)
         .done((googleData) => {
             startIndex += maxResults;
             prepareData(googleData.items)
+            //let like = books.shift()
             addBook()
         })
         .fail((googleError) => {
@@ -58,7 +61,8 @@ function addBook() {
     $("#Pages").html("<b>Pages: </b>" + addBooks.pageCount);
     $("#frontPage").attr("src", addBooks.image);
     $("#Description").html("<b>Description: </b>" + addBooks.description);
-
+    // falta criar  link1 - ex:  $("#Link").atr("href", addBooks.infoLink);
+    // falta criar  link2
     console.log(addBooks);
 }
 
