@@ -71,7 +71,7 @@ function likeBook() {
     let addBooks = books.shift();
     addBook();
     allBooks.push(addBooks);
-    $("#MyLib").prepend(`<tr><td>${addBooks.title}</td></tr>`);
+    $("#MyLib").prepend(`<tr><td><b>${addBooks.title}</b></td></tr>`);
     //addItemsToMe();
 }
 
@@ -79,7 +79,7 @@ function dislikeBook() {
     let addBooks = books.shift();
     addBook();
     allBooks.push(addBooks);
-    $("#ThanosLib").prepend(`<tr><td>${addBooks.title}</td></tr>`);
+    $("#ThanosLib").prepend(`<tr><td><b>${addBooks.title}</b></td></tr>`);
 }
 
 function restartBooks() {
