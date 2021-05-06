@@ -31,14 +31,14 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-4">
-                <label class="text-center fw-bolder bg-danger text-white" for="iron-man-image"
-                    style="height:30px;width:200px;">Click Iron Man to save books</label><br>
-                <input type="image" id="iron-man-image" src="iron-man.png" width="250" height="200"
+            <div class="col-sm-4">
+                <label class="fw-bolder text-center" for="iron-man-image"
+                    style="height:30px;width:300px;">Click Iron Man to save books</label><br>
+                <input type="image" id="iron-man-image" class="img-fluid" src="iron-man.png"
                     onclick="likeBook()" />
                 <p id="MyLib"></p>
             </div>
-            <div class="col-4">
+            <div class="col-sm-4">
                 <img id="frontPage" src=""><br>
                 <p id="Title"></p>
                 <p id="Language"></p>
@@ -48,12 +48,12 @@
                 <p id="Language"></p>
                 <p id="Description"></p>
             </div>
-            <div class="col-4">
-                <label class="text-center fw-bolder bg-danger text-white" for="thanos-image"
-                    style="height:30px;width:200px;">Click Thanos to snap the book</label>
-                <input type="image" id="thanos-image" src="thanos.png" width="250" height="200"
+            <div class="col-sm-4">
+                <label class="fw-bolder text-center" for="thanos-image"
+                    style="height:30px;width:300px;">Click Thanos to snap the book</label>
+                <input type="image" id="thanos-image" class="img-fluid" src="thanos.png"
                     onclick="dislikeBook () " />
-                <p id="ThanosLib"></p>
+                <p id="ThanosLib" class="fw-bolder text-center"></p>
             </div>
         </div>
     </div>
@@ -76,9 +76,9 @@
     </div>
     </div>
 
-    <input type="image" id="gaunt-image" class="rounded mx-auto d-block" src="infinity-gauntlet.png"
-        onclick="restartBooks()" width="250" height="200" />
-    <p class="fs-3 fw-bolder text-center ">Use the gauntlet to snap libraries</p>
+    <input type="image" id="gaunt-image" class="rounded mx-auto d-block img-fluid" src="infinity-gauntlet.png"
+        onclick="restartBooks()"/>
+    <p class="fw-bolder text-center ">Use the gauntlet to snap libraries</p>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
